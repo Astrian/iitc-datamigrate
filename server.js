@@ -12,6 +12,6 @@ httpsServer.listen(443, () => {
     console.log('HTTPS Server is running on: https://localhost:%s', 443)
 })
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
+app.get('/intel', (req, res) => {
+  res.sendFile( __dirname + "/" + "index.htm" )
 })

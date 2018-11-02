@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>helloworld</title>
+  </head>
+  <body>
+    <div id="app">
+      <p>你的原有 <code>ingress.com/intel</code> 存储数据如下。</p>
+      <pre>{{storage}}</pre>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script>
+    let app = new Vue({
+      el: '#app',
+      data: {
+        storage: ''
+      },
+      created() {
+        let getKey, i = 0, res = {}
+        do {
+          getKey = localStorage.key(i++)
+          if (getKey) res[getKey] = localStorage.getItem(getKey)
+        } while (getKey)
+        this.storage = res
+      }
+    })
+  </script>
+  <style>
+    pre {
+      background-color: rgb(218, 218, 218);
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+</html>
