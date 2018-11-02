@@ -1,0 +1,24 @@
+{
+  "name": "iitc-datamigrate",
+  "version": "1.0.0",
+  "description": "IITC 新旧 Intel 地址迁移插件",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/AstrianZheng/iitc-datamigrate.git"
+  },
+  "keywords": [
+    "IITC",
+    "Ingress"
+  ],
+  "author": "Astrian Zheng",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/AstrianZheng/iitc-datamigrate#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "https": "^1.0.0"
+  }
+}
